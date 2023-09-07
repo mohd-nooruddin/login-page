@@ -2,8 +2,9 @@
 Working API's of basic login and registration page along with longin activity captured.
 
 It has api's 
-1. For Registering
-  mapping - Post
+1.
+For Registering
+  mapping - Post,
   url - localhost:8095/user
   json data - {
     "fullName" : "Mohd Nooruddin",
@@ -11,10 +12,16 @@ It has api's
     "password" : "12345678"
 }
 
-2. Login User
-   mapping - Get
+2.
+Login User
+   mapping - Get,
    url - localhost:8095/login?username={email_id}&pass={your-password}
    note - Done forget to change email_id and your-password
 
+3.
 Now Question Comes - Why is this ?
 Answer - It will do give message message as per user login credentials and will record all the login attempts along with their specifice success of failure message into the database;
+4. 
+Tech Used
+ JDK - 17
+ Dependecies - Spring WEB, Spring DataJpa, Mysql, DevTools
